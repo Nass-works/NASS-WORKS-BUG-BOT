@@ -22,6 +22,7 @@ const NodeCache = require("node-cache")
 const Pino = require("pino")
 const readline = require("readline")
 const { parsePhoneNumber } = require("libphonenumber-js")
+const keep_alive = require('./keep_alive.js')
 const makeWASocket = require("@whiskeysockets/baileys").default
 
 const store = makeInMemoryStore({
